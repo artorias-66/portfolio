@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anubhav Verma | Software Engineer</title>
+    <meta name="description"
+        content="Anubhav Verma — Full-Stack & DevOps Engineer, LeetCode Knight, B.Tech IT student at JSS NOIDA. Seeking FAANG-level software engineering internships." />
+    <meta property="og:title" content="Anubhav Verma | Software Engineer" />
+    <meta property="og:description"
+        content="Portfolio of Anubhav Verma — Full-Stack & DevOps, LeetCode Knight 1897, 1000+ problems solved." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <!-- ───── NAVBAR ───── -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo" aria-label="Home">AV<span class="dot">.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="mailto:anubhavverma233@gmail.com" class="btn btn-outline nav-cta">Hire Me</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ───── HERO ───── -->
+    <section id="hero" class="hero-section">
+        <canvas id="particle-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Open to FAANG Internships 2025–26</span>
+            </div>
+            <h1 class="hero-name">Anubhav<br /><span class="hero-name-accent">Verma</span></h1>
+            <p class="hero-subtitle">
+                <span id="typed-text"></span><span class="cursor-blink">|</span>
+            </p>
+            <p class="hero-desc">
+                Full-Stack Engineer · DevOps · Competitive Programmer<br />
+                Building scalable systems, one commit at a time.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-num" data-target="1897">0</span>
+                    <span class="stat-label">LeetCode Rating</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <span class="stat-num" data-target="1000" data-suffix="+">0</span>
+                    <span class="stat-label">Problems Solved</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <span class="stat-num" data-target="5" data-suffix="+">0</span>
+                    <span class="stat-label">Live Deployments</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ───── ABOUT ───── -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Passionate Engineer.<br />Relentless Problem Solver.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a <strong>B.Tech Information Technology</strong> student at JSS Academy of Technical
+                        Education, Noida (CGPA: 7.9), with hands-on experience building production-grade systems across
+                        the full stack.
+                    </p>
+                    <p>
+                        Currently interning at <strong>CloudCrane</strong> as an SDE Intern, I ship Flutter features,
+                        architect Supabase backends, and own CI/CD pipelines end-to-end. I love hard engineering
+                        problems — whether that's designing hybrid RAG microservices or squeezing 60% bandwidth savings
+                        from a CRDT algorithm.
+                    </p>
+                    <p>
+                        Outside work, I'm a <strong>LeetCode Knight</strong> (top 4.39%) and avid competitive
+                        programmer, having solved 1000+ problems across LeetCode, Codeforces, and CodeChef.
+                    </p>
+                    <div class="about-links">
+                        <a href="https://github.com/artorias-66" target="_blank" rel="noopener" class="about-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/anubhav-verma-b83787338/" target="_blank" rel="noopener"
+                            class="about-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:anubhavverma233@gmail.com" class="about-link"><i class="fas fa-envelope"></i>
+                            Email</a>
+                    </div>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap info-icon"></i>
+                            <div>
+                                <span class="info-label">Education</span>
+                                <span class="info-value">B.Tech IT, JSS NOIDA</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-star info-icon accent"></i>
+                            <div>
+                                <span class="info-label">CGPA</span>
+                                <span class="info-value">7.9 / 10</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase info-icon"></i>
+                            <div>
+                                <span class="info-label">Status</span>
+                                <span class="info-value">SDE Intern @ CloudCrane</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt info-icon"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Noida, Uttar Pradesh</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-trophy info-icon gold"></i>
+                            <div>
+                                <span class="info-label">LeetCode</span>
+                                <span class="info-value">Knight · Top 4.39%</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone info-icon"></i>
+                            <div>
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+91 9555807816</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── EXPERIENCE ───── -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Work Experience</span>
+                <h2 class="section-title">Where I've Worked</h2>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-company">CloudCrane</h3>
+                                <p class="exp-role">Software Development Engineer Intern</p>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fas fa-calendar-alt"></i> Nov 2025 – Present</span>
+                                <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Remote, India</span>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Delivered production-grade Flutter features across business and admin apps, contributing
+                                to <strong>5+ live deployments</strong>.</li>
+                            <li>Architected RESTful backend services using <strong>PostgreSQL and Supabase</strong> with
+                                JWT authentication and real-time APIs.</li>
+                            <li>Developed secure workflows using <strong>Supabase Edge Functions</strong> and enforced
+                                Google OAuth with role-based access control.</li>
+                            <li>Built <strong>CI/CD pipelines</strong> using GitHub Actions for linting, testing, APK
+                                builds, and artifact storage.</li>
+                            <li>Resolved Android build issues (SDK upgrades, analyzer fixes) and optimized CI workflows
+                                for stable releases.</li>
+                            <li>Reviewed pull requests and assisted in technical interviews evaluating DSA and
+                                problem-solving skills.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">OAuth</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── PROJECTS ───── -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Things I've Built</h2>
+            </div>
+            <div class="projects-grid projects-grid-3">
+
+                <!-- Project 1 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon-wrap"><i class="fas fa-file-alt project-icon"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/artorias-66/Collaborative-Text-Editor" target="_blank"
+                                rel="noopener" class="icon-btn" aria-label="GitHub Repository"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://collaborative-editor-frontend.onrender.com/login" target="_blank"
+                                rel="noopener" class="icon-btn" aria-label="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Real-Time Collaborative Editor</h3>
+                    <p class="project-date"><i class="fas fa-calendar-alt"></i> Nov 2025</p>
+                    <ul class="project-bullets">
+                        <li>Built collaborative editor using <strong>Yjs CRDT</strong>, supporting <strong>10+
+                                concurrent users</strong> with sub-200ms sync latency over WebSocket.</li>
+                        <li>Integrated <strong>Google Gemini API</strong> with Server-Sent Events for streaming AI
+                            grammar correction and text enhancement.</li>
+                        <li>JWT auth with httpOnly cookies, role-based sharing, auto-save, and input sanitization.</li>
+                        <li>Reduced bandwidth by <strong>60%</strong> using CRDT delta propagation — from 12 KB to under
+                            5 KB per edit.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag tag-primary">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Yjs CRDT</span>
+                        <span class="tag">WebSocket</span>
+                        <span class="tag">Gemini API</span>
+                    </div>
+                    <div class="project-badge live"><span class="live-dot"></span>Live</div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon-wrap"><i class="fas fa-chart-line project-icon"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/artorias-66" target="_blank" rel="noopener" class="icon-btn"
+                                aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Equity Research Tool</h3>
+                    <p class="project-subtitle">Hybrid RAG Microservice</p>
+                    <p class="project-date"><i class="fas fa-calendar-alt"></i> Oct 2025</p>
+                    <ul class="project-bullets">
+                        <li>Production-grade RAG microservice with <strong>5 RESTful endpoints</strong>, token-bucket
+                            rate limiting, and async ingestion via aiohttp.</li>
+                        <li>Hybrid retrieval: <strong>BM25 + FAISS</strong> vector similarity + Reciprocal Rank Fusion +
+                            cross-encoder re-ranking → <strong>93% retrieval relevance</strong>.</li>
+                        <li>LRU caching with TTL, metadata tracking, and conversation memory — reduced latency by
+                            <strong>60%</strong>.
+                        </li>
+                        <li>87 unit tests (pytest, 7 modules) + CI/CD via Docker multi-stage builds and GitHub Actions.
+                        </li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag tag-primary">FastAPI</span>
+                        <span class="tag">FAISS</span>
+                        <span class="tag">BM25</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">pytest</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon-wrap" style="background: rgba(124,58,237,0.12);"><i
+                                class="fas fa-bell project-icon" style="color: #9b5cf6;"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/artorias-66/subscription_tracker_frontend" target="_blank"
+                                rel="noopener" class="icon-btn" aria-label="Frontend Repo"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://github.com/artorias-66/subscription_tracker" target="_blank" rel="noopener"
+                                class="icon-btn" aria-label="Backend Repo"><i class="fas fa-server"></i></a>
+                            <a href="https://subscription-tracker-eight-beige.vercel.app" target="_blank" rel="noopener"
+                                class="icon-btn" aria-label="Live API"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SubDub — Subscription Tracker</h3>
+                    <p class="project-subtitle">Full-Stack SaaS · React 19 + Node.js/Express + MongoDB</p>
+                    <p class="project-date"><i class="fas fa-calendar-alt"></i> 2025</p>
+                    <ul class="project-bullets">
+                        <li>Built a full-stack subscription management SaaS with <strong>JWT auth</strong>, subscription
+                            CRUD, and a <strong>React 19 + Vite 7</strong> frontend deployed on Vercel.</li>
+                        <li>Architected durable <strong>email reminder workflows</strong> using <strong>Upstash
+                                QStash</strong> — 4 reminder variants (7d, 5d, 2d, 1d) with automatic retries and
+                            scheduled delays via <code>context.sleep</code>.</li>
+                        <li>Secured API surface with <strong>Arcjet rate limiting &amp; bot detection</strong>;
+                            Nodemailer SMTP with templated reminder emails per renewal cycle.</li>
+                        <li>Designed RESTful API with <strong>8 endpoints</strong> across auth, users, and
+                            subscriptions; Mongoose schemas with user-subscription associations on MongoDB.</li>
+                    </ul>
+                    <div class="project-meta-row">
+                        <div class="project-tags">
+                            <span class="tag tag-purple">React 19</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Upstash QStash</span>
+                            <span class="tag">Arcjet</span>
+                            <span class="tag">Nodemailer</span>
+                            <span class="tag">Vite 7</span>
+                            <span class="tag">JWT</span>
+                        </div>
+                        <div class="project-repo-labels">
+                            <a href="https://github.com/artorias-66/subscription_tracker_frontend" target="_blank"
+                                rel="noopener" class="repo-label"><i class="fab fa-github"></i> Frontend</a>
+                            <a href="https://github.com/artorias-66/subscription_tracker" target="_blank" rel="noopener"
+                                class="repo-label"><i class="fab fa-github"></i> Backend</a>
+                        </div>
+                    </div>
+                    <div class="project-badge live"><span class="live-dot"></span>Live</div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon-wrap" style="background: rgba(16,185,129,0.12);"><i
+                                class="fas fa-book project-icon" style="color: #10b981;"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/artorias-66/Book-Review-Platform/tree/main/book-review-platform"
+                                target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Repository"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://book-review-platform-sage-one.vercel.app/" target="_blank" rel="noopener"
+                                class="icon-btn" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Book Review Platform</h3>
+                    <p class="project-subtitle">Full-Stack MERN · React 18 + Express + MongoDB</p>
+                    <p class="project-date"><i class="fas fa-calendar-alt"></i> 2025</p>
+                    <ul class="project-bullets">
+                        <li>Built a full-stack book review SaaS with <strong>JWT auth</strong>, book CRUD, star ratings
+                            (1–5), search &amp; filter, and pagination (10/page).</li>
+                        <li>Hardened API with <strong>10+ security enhancements</strong>: Helmet.js headers, rate
+                            limiting (100 req/15 min general, 5 req/15 min auth), bcrypt hashing.</li>
+                        <li>Implemented <strong>express-validator</strong> with client + server-side validation, CORS
+                            protection, and error boundaries across the React 18 frontend.</li>
+                        <li>Deployed frontend on <strong>Vercel</strong>, backend on Render; MongoDB Atlas with indexes
+                            for fast query performance.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag tag-green">React 18</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Helmet.js</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">bcrypt</span>
+                        <span class="tag">Mongoose 8</span>
+                    </div>
+                    <div class="project-badge live"><span class="live-dot"></span>Live</div>
+                </div>
+
+
+            </div>
+    </section>
+
+    <!-- ───── ACHIEVEMENTS ───── -->
+    <section id="achievements" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Competitive Programming</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card reveal">
+                    <div class="ach-icon-wrap lc"><img src="leetcode.png" alt="LeetCode" class="ach-platform-logo" />
+                    </div>
+                    <div class="ach-body">
+                        <h3 class="ach-title">LeetCode Knight</h3>
+                        <p class="ach-desc">Rating <strong>1897</strong> · Top <strong>4.39%</strong> globally ·
+                            <strong>1000+</strong> algorithmic problems solved
+                        </p>
+                        <a href="https://leetcode.com/u/anubhavverma233" target="_blank" rel="noopener"
+                            class="ach-link">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="ach-badge knight">Knight</div>
+                </div>
+                <div class="achievement-card glass-card reveal">
+                    <div class="ach-icon-wrap cf"><img src="cf.png" alt="Codeforces" class="ach-platform-logo" /></div>
+                    <div class="ach-body">
+                        <h3 class="ach-title">Codeforces Specialist</h3>
+                        <p class="ach-desc">Rating <strong>1494</strong> · Specialist rank on Codeforces</p>
+                        <a href="https://codeforces.com/profile/anubhavverma233" target="_blank" rel="noopener"
+                            class="ach-link">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="ach-badge specialist">Specialist</div>
+                </div>
+                <div class="achievement-card glass-card reveal">
+                    <div class="ach-icon-wrap cc"><img src="cc.png" alt="CodeChef" class="ach-platform-logo" /></div>
+                    <div class="ach-body">
+                        <h3 class="ach-title">CodeChef 3★</h3>
+                        <p class="ach-desc">Rating <strong>1775</strong> · Three star rated competitive programmer</p>
+                        <a href="https://www.codechef.com/users/anubhavverma23" target="_blank" rel="noopener"
+                            class="ach-link">View Profile <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="ach-badge star3">3★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── SKILLS ───── -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Technical Skills</span>
+                <h2 class="section-title">My Tech Stack</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-header">
+                        <i class="fas fa-code skill-group-icon"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-header">
+                        <i class="fas fa-desktop skill-group-icon"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-header">
+                        <i class="fas fa-server skill-group-icon"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">WebSockets</span>
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">OAuth</span>
+                    </div>
+                </div>
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-header">
+                        <i class="fas fa-database skill-group-icon"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-header">
+                        <i class="fas fa-brain skill-group-icon"></i>
+                        <h3>AI / ML</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">Gemini API</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">Embeddings</span>
+                    </div>
+                </div>
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-header">
+                        <i class="fas fa-tools skill-group-icon"></i>
+                        <h3>DevOps &amp; Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+                <div class="skill-group glass-card reveal" style="grid-column: span 2;">
+                    <div class="skill-group-header">
+                        <i class="fas fa-sitemap skill-group-icon"></i>
+                        <h3>Core CS</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures &amp; Algorithms</span>
+                        <span class="skill-tag">Operating Systems</span>
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">Computer Networks</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Client–Server Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── CERTIFICATIONS ───── -->
+    <section id="certifications" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Certifications</span>
+                <h2 class="section-title">Credentials</h2>
+            </div>
+            <div class="certs-grid">
+                <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=EF363627B7FA1ECF04A6C8EB20D05FEB3C374CBF9D835F34E4D2C61C7BC94F42"
+                    target="_blank" rel="noopener" class="cert-card glass-card reveal">
+                    <div class="cert-oracle-logo">
+                        <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="12" fill="#C74634" />
+                            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="white"
+                                font-size="16" font-weight="bold" font-family="sans-serif">OCI</text>
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">Oracle Cloud Infrastructure 2025</h3>
+                        <p class="cert-sub">Certified AI Foundations Associate</p>
+                        <span class="cert-link">View Badge <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                </a>
+                <a href="https://mylearn.oracle.com/ou/learning-path/ai-for-you-training-and-assessment/152600"
+                    target="_blank" rel="noopener" class="cert-card glass-card reveal">
+                    <div class="cert-oracle-logo">
+                        <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="12" fill="#C74634" />
+                            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="white"
+                                font-size="16" font-weight="bold" font-family="sans-serif">AI</text>
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">Oracle AI for You</h3>
+                        <p class="cert-sub">Training and Assessment</p>
+                        <span class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── CONTACT ───── -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-sub reveal">I'm actively looking for SDE internship opportunities at top product
+                    companies. If you'd like to talk, my inbox is always open.</p>
+            </div>
+            <div class="contact-grid reveal">
+                <a href="mailto:anubhavverma233@gmail.com" class="contact-card glass-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">anubhavverma233@gmail.com</span>
+                </a>
+                <a href="tel:+919555807816" class="contact-card glass-card">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+91 9555807816</span>
+                </a>
+                <a href="https://www.linkedin.com/in/anubhav-verma-b83787338/" target="_blank" rel="noopener"
+                    class="contact-card glass-card">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">Connect with me</span>
+                </a>
+                <a href="https://github.com/artorias-66" target="_blank" rel="noopener" class="contact-card glass-card">
+                    <i class="fab fa-github contact-icon"></i>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">artorias-66</span>
+                </a>
+            </div>
+            <div class="contact-cta reveal">
+                <a href="mailto:anubhavverma233@gmail.com" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane"></i> Say Hello
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── FOOTER ───── -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-copy">Designed &amp; Built by <strong>Anubhav Verma</strong> · 2025</p>
+            <div class="footer-social">
+                <a href="https://github.com/artorias-66" target="_blank" rel="noopener" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anubhav-verma-b83787338/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/anubhavverma233" target="_blank" rel="noopener" aria-label="LeetCode"><i
+                        class="fas fa-code"></i></a>
+                <a href="mailto:anubhavverma233@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
