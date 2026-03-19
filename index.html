@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anubhav Verma | Software Engineer</title>
     <meta name="description"
-        content="Anubhav Verma — Full-Stack & DevOps Engineer, LeetCode Knight, B.Tech IT student at JSS NOIDA. Seeking FAANG-level software engineering internships." />
+        content="Anubhav Verma — Full-Stack & AI Engineer, LeetCode Knight, B.Tech IT student at JSS NOIDA. Building production-grade voice AI, real-time systems, and LLM-powered backends." />
     <meta property="og:title" content="Anubhav Verma | Software Engineer" />
     <meta property="og:description"
-        content="Portfolio of Anubhav Verma — Full-Stack & DevOps, LeetCode Knight 1909, 1000+ problems solved." />
+        content="Portfolio of Anubhav Verma — Voice AI, Full-Stack, LeetCode Knight 1909, 1000+ problems solved." />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,15 +47,15 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <span class="badge-dot"></span>
-                <span>Open to FAANG Internships 2025–26</span>
+                <span>Open to SDE Internships 2025–26</span>
             </div>
             <h1 class="hero-name">Anubhav<br /><span class="hero-name-accent">Verma</span></h1>
             <p class="hero-subtitle">
                 <span id="typed-text"></span><span class="cursor-blink">|</span>
             </p>
             <p class="hero-desc">
-                Full-Stack Engineer · DevOps · Competitive Programmer<br />
-                Building scalable systems, one commit at a time.
+                Full-Stack Engineer · Voice AI · Real-Time Systems<br />
+                Building production-grade AI, one commit at a time.
             </p>
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -95,18 +95,19 @@
                 <div class="about-text reveal">
                     <p>
                         I'm a <strong>B.Tech Information Technology</strong> student at JSS Academy of Technical
-                        Education, Noida (CGPA: 7.9), with hands-on experience building production-grade systems across
-                        the full stack.
+                        Education, Noida (CGPA: 7.9), with hands-on experience building production-grade AI and
+                        backend systems across the full stack.
                     </p>
                     <p>
-                        Currently interning at <strong>CloudCrane</strong> as an SDE Intern, I ship Flutter features,
-                        architect Supabase backends, and own CI/CD pipelines end-to-end. I love hard engineering
-                        problems — whether that's designing hybrid RAG microservices or squeezing 60% bandwidth savings
-                        from a CRDT algorithm.
+                        Currently interning at <strong>CloudCrane</strong> as an SDE Intern, where I shipped
+                        <strong>Gobbles</strong> — a full end-to-end Voice AI waiter with a complete
+                        mic → STT → LLM → TTS pipeline using OpenAI, ElevenLabs, and a custom
+                        AudioWorklet with RingBuffer for real-time PCM16 audio streaming.
                     </p>
                     <p>
-                        Outside work, I'm a <strong>LeetCode Knight</strong> (top 4.12%) and avid competitive
-                        programmer, having solved 1000+ problems across LeetCode, Codeforces, and CodeChef.
+                        I also build LLM-powered backends, real-time collaborative systems, and distributed
+                        infrastructure — and I'm a <strong>LeetCode Knight</strong> (Top 4.12%) with 1000+
+                        problems solved across LeetCode, Codeforces, and CodeChef.
                     </p>
                     <div class="about-links">
                         <a href="https://github.com/artorias-66" target="_blank" rel="noopener" class="about-link"><i
@@ -117,7 +118,7 @@
                             Email</a>
                     </div>
                 </div>
-                <div class="about-card reveal">
+                <div class="about-card glass-card reveal">
                     <div class="about-info-grid">
                         <div class="info-item">
                             <i class="fas fa-graduation-cap info-icon"></i>
@@ -190,28 +191,36 @@
                             </div>
                         </div>
                         <ul class="exp-bullets">
-                            <li>Delivered production-grade Flutter features across business and admin apps, contributing
-                                to <strong>5+ live deployments</strong>.</li>
-                            <li>Architected RESTful backend services using <strong>PostgreSQL and Supabase</strong> with
-                                JWT authentication and real-time APIs.</li>
-                            <li>Developed secure workflows using <strong>Supabase Edge Functions</strong> and enforced
-                                Google OAuth with role-based access control.</li>
-                            <li>Built <strong>CI/CD pipelines</strong> using GitHub Actions for linting, testing, APK
-                                builds, and artifact storage.</li>
-                            <li>Resolved Android build issues (SDK upgrades, analyzer fixes) and optimized CI workflows
-                                for stable releases.</li>
-                            <li>Reviewed pull requests and assisted in technical interviews evaluating DSA and
-                                problem-solving skills.</li>
+                            <li>Shipped <strong>Gobbles</strong> — a production Voice AI waiter with a complete
+                                <strong>mic → STT → LLM → TTS pipeline</strong>: built Express voice APIs,
+                                integrated OpenAI transcription with menu-aware prompt orchestration,
+                                ElevenLabs TTS with key caching, ffmpeg multi-format audio normalisation,
+                                and per-IP rate limiting.
+                            </li>
+                            <li>Engineered a custom <strong>AudioWorklet</strong> with a self-growing
+                                <strong>RingBuffer (24kHz, 30s capacity)</strong> for glitch-free PCM16
+                                streaming playback off the main browser thread — plus a base64
+                                PCM16-to-Float32 decoder and React <code>useSpeech</code> hook with full
+                                recording lifecycle and state machine UI
+                                (<code>idle → listening → processing → speaking</code>).
+                            </li>
+                            <li>Accelerated feature delivery by building scalable <strong>RESTful APIs</strong>
+                                in Node.js/TypeScript with JWT + Google OAuth and React frontend components,
+                                shipping <strong>5+ production features</strong> end-to-end across Agile sprints.</li>
+                            <li>Improved deployment reliability by maintaining <strong>CI/CD pipelines</strong>
+                                via GitHub Actions with PR-based code reviews in a fast-paced startup environment.</li>
                         </ul>
                         <div class="exp-tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Supabase</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">ElevenLabs</span>
+                            <span class="tag">AudioWorklet</span>
+                            <span class="tag">WebSockets</span>
                             <span class="tag">JWT</span>
-                            <span class="tag">OAuth</span>
                             <span class="tag">GitHub Actions</span>
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">Docker</span>
+                            <span class="tag">ffmpeg</span>
                         </div>
                     </div>
                 </div>
@@ -229,7 +238,43 @@
             </div>
             <div class="projects-grid projects-grid-3">
 
-                <!-- Project 1 -->
+                <!-- Project 1 — Sage -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon-wrap"><i class="fas fa-brain project-icon"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/artorias-66/News-Research-Tool" target="_blank" rel="noopener"
+                                class="icon-btn" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://sage-news-research-tool.streamlit.app/" target="_blank" rel="noopener"
+                                class="icon-btn" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Sage</h3>
+                    <p class="project-subtitle">LLM Agent & RAG Pipeline</p>
+                    <p class="project-date"><i class="fas fa-calendar-alt"></i> Oct 2025</p>
+                    <ul class="project-bullets">
+                        <li>Built a production-grade <strong>LLM agent microservice</strong> using FastAPI —
+                            document ingestion, semantic retrieval, and multi-turn response generation
+                            with streaming output.</li>
+                        <li>Improved retrieval accuracy to <strong>93%</strong> and cut latency by
+                            <strong>60%</strong> using hybrid retrieval: BM25 + FAISS vector similarity
+                            with Reciprocal Rank Fusion and cross-encoder re-ranking.
+                        </li>
+                        <li>Exposed clean REST endpoints for ingestion, retrieval, and generation with
+                            structured JSON logging and security-aware API design.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag tag-primary">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">FAISS</span>
+                        <span class="tag">BM25</span>
+                        <span class="tag">Groq API</span>
+                        <span class="tag">Streamlit</span>
+                    </div>
+                    <div class="project-badge live"><span class="live-dot"></span>Live</div>
+                </div>
+
+                <!-- Project 2 — Quill -->
                 <div class="project-card glass-card reveal">
                     <div class="project-header">
                         <div class="project-icon-wrap"><i class="fas fa-file-alt project-icon"></i></div>
@@ -242,66 +287,72 @@
                                     class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <h3 class="project-title">Real-Time Collaborative Editor</h3>
+                    <h3 class="project-title">Quill</h3>
+                    <p class="project-subtitle">Real-Time AI Collaborative Editor</p>
                     <p class="project-date"><i class="fas fa-calendar-alt"></i> Nov 2025</p>
                     <ul class="project-bullets">
-                        <li>Built collaborative editor using <strong>Yjs CRDT</strong>, supporting <strong>10+
-                                concurrent users</strong> with sub-200ms sync latency over WebSocket.</li>
-                        <li>Integrated <strong>Google Gemini API</strong> with Server-Sent Events for streaming AI
-                            grammar correction and text enhancement.</li>
-                        <li>JWT auth with httpOnly cookies, role-based sharing, auto-save, and input sanitization.</li>
-                        <li>Reduced bandwidth by <strong>60%</strong> using CRDT delta propagation — from 12 KB to under
-                            5 KB per edit.</li>
+                        <li>Enabled conflict-free real-time collaboration for <strong>10+ concurrent
+                                users</strong> at sub-200ms latency using <strong>WebSocket sync</strong>
+                            and Yjs CRDT.</li>
+                        <li>Integrated <strong>Google Gemini API</strong> for AI text enhancement via
+                            <strong>SSE streaming</strong>; implemented JWT auth and role-based
+                            access control.
+                        </li>
+                        <li>Reduced bandwidth by <strong>60%</strong> using CRDT delta propagation —
+                            from 12 KB to under 5 KB per edit.</li>
                     </ul>
                     <div class="project-tags">
                         <span class="tag tag-primary">React</span>
                         <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
+                        <span class="tag">TypeScript</span>
                         <span class="tag">Yjs CRDT</span>
-                        <span class="tag">WebSocket</span>
+                        <span class="tag">WebSockets</span>
                         <span class="tag">Gemini API</span>
                     </div>
                     <div class="project-badge live"><span class="live-dot"></span>Live</div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card glass-card reveal">
-                    <div class="project-header">
-                        <div class="project-icon-wrap"><i class="fas fa-chart-line project-icon"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/artorias-66" target="_blank" rel="noopener" class="icon-btn"
-                                aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Equity Research Tool</h3>
-                    <p class="project-subtitle">Hybrid RAG Microservice</p>
-                    <p class="project-date"><i class="fas fa-calendar-alt"></i> Oct 2025</p>
-                    <ul class="project-bullets">
-                        <li>Production-grade RAG microservice with <strong>5 RESTful endpoints</strong>, token-bucket
-                            rate limiting, and async ingestion via aiohttp.</li>
-                        <li>Hybrid retrieval: <strong>BM25 + FAISS</strong> vector similarity + Reciprocal Rank Fusion +
-                            cross-encoder re-ranking → <strong>93% retrieval relevance</strong>.</li>
-                        <li>LRU caching with TTL, metadata tracking, and conversation memory — reduced latency by
-                            <strong>60%</strong>.
-                        </li>
-                        <li>87 unit tests (pytest, 7 modules) + CI/CD via Docker multi-stage builds and GitHub Actions.
-                        </li>
-                    </ul>
-                    <div class="project-tags">
-                        <span class="tag tag-primary">FastAPI</span>
-                        <span class="tag">FAISS</span>
-                        <span class="tag">BM25</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">pytest</span>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
+                <!-- Project 3 — Snip -->
                 <div class="project-card glass-card reveal">
                     <div class="project-header">
                         <div class="project-icon-wrap" style="background: rgba(124,58,237,0.12);"><i
-                                class="fas fa-bell project-icon" style="color: #9b5cf6;"></i></div>
+                                class="fas fa-link project-icon" style="color: #9b5cf6;"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/artorias-66/URL_Shortener" target="_blank" rel="noopener"
+                                class="icon-btn" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://url-shortener-teal-psi.vercel.app/docs" target="_blank" rel="noopener"
+                                class="icon-btn" aria-label="Live API"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Snip</h3>
+                    <p class="project-subtitle">Distributed URL Shortener</p>
+                    <p class="project-date"><i class="fas fa-calendar-alt"></i> Mar 2026</p>
+                    <ul class="project-bullets">
+                        <li>Achieved <strong>sub-millisecond p99 latency</strong> and <strong>95% cache
+                                hit rate</strong> using Redis cache-aside architecture with async
+                            SQLAlchemy under sustained load.</li>
+                        <li>Implemented token-bucket rate limiting, Base62 slug generation with collision
+                            detection across a <strong>3.5T+ keyspace</strong>, TTL-based expiry, and
+                            atomic click analytics.</li>
+                        <li>Containerised with Docker Compose; deployed serverless on Vercel with
+                            Supabase PostgreSQL and Upstash Redis.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag tag-purple">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">SQLAlchemy</span>
+                    </div>
+                    <div class="project-badge live"><span class="live-dot"></span>Live</div>
+                </div>
+
+                <!-- Project 4 — SubDub -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon-wrap" style="background: rgba(16,185,129,0.12);"><i
+                                class="fas fa-bell project-icon" style="color: #10b981;"></i></div>
                         <div class="project-links">
                             <a href="https://github.com/artorias-66/subscription_tracker_frontend" target="_blank"
                                 rel="noopener" class="icon-btn" aria-label="Frontend Repo"><i
@@ -309,33 +360,31 @@
                             <a href="https://github.com/artorias-66/subscription_tracker" target="_blank" rel="noopener"
                                 class="icon-btn" aria-label="Backend Repo"><i class="fas fa-server"></i></a>
                             <a href="https://subscription-tracker-eight-beige.vercel.app" target="_blank" rel="noopener"
-                                class="icon-btn" aria-label="Live API"><i class="fas fa-external-link-alt"></i></a>
+                                class="icon-btn" aria-label="Live App"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <h3 class="project-title">SubDub — Subscription Tracker</h3>
-                    <p class="project-subtitle">Full-Stack SaaS · React 19 + Node.js/Express + MongoDB</p>
+                    <h3 class="project-title">SubDub</h3>
+                    <p class="project-subtitle">Subscription Tracker SaaS</p>
                     <p class="project-date"><i class="fas fa-calendar-alt"></i> 2025</p>
                     <ul class="project-bullets">
-                        <li>Built a full-stack subscription management SaaS with <strong>JWT auth</strong>, subscription
-                            CRUD, and a <strong>React 19 + Vite 7</strong> frontend deployed on Vercel.</li>
-                        <li>Architected durable <strong>email reminder workflows</strong> using <strong>Upstash
-                                QStash</strong> — 4 reminder variants (7d, 5d, 2d, 1d) with automatic retries and
-                            scheduled delays via <code>context.sleep</code>.</li>
-                        <li>Secured API surface with <strong>Arcjet rate limiting &amp; bot detection</strong>;
+                        <li>Built a full-stack subscription management SaaS with <strong>JWT auth</strong>,
+                            subscription CRUD, and a <strong>React 19 + Vite 7</strong> frontend
+                            deployed on Vercel.</li>
+                        <li>Architected durable <strong>email reminder workflows</strong> using
+                            <strong>Upstash QStash</strong> — 4 reminder variants with automatic retries
+                            and scheduled delays.
+                        </li>
+                        <li>Secured API with <strong>Arcjet rate limiting &amp; bot detection</strong>;
                             Nodemailer SMTP with templated reminder emails per renewal cycle.</li>
-                        <li>Designed RESTful API with <strong>8 endpoints</strong> across auth, users, and
-                            subscriptions; Mongoose schemas with user-subscription associations on MongoDB.</li>
                     </ul>
                     <div class="project-meta-row">
                         <div class="project-tags">
-                            <span class="tag tag-purple">React 19</span>
+                            <span class="tag tag-green">React 19</span>
                             <span class="tag">Node.js</span>
                             <span class="tag">Express</span>
                             <span class="tag">MongoDB</span>
                             <span class="tag">Upstash QStash</span>
                             <span class="tag">Arcjet</span>
-                            <span class="tag">Nodemailer</span>
-                            <span class="tag">Vite 7</span>
                             <span class="tag">JWT</span>
                         </div>
                         <div class="project-repo-labels">
@@ -347,47 +396,9 @@
                     </div>
                     <div class="project-badge live"><span class="live-dot"></span>Live</div>
                 </div>
-                <!-- Project 4 -->
-                <div class="project-card glass-card reveal">
-                    <div class="project-header">
-                        <div class="project-icon-wrap" style="background: rgba(16,185,129,0.12);"><i
-                                class="fas fa-book project-icon" style="color: #10b981;"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/artorias-66/Book-Review-Platform/tree/main/book-review-platform"
-                                target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Repository"><i
-                                    class="fab fa-github"></i></a>
-                            <a href="https://book-review-platform-sage-one.vercel.app/" target="_blank" rel="noopener"
-                                class="icon-btn" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Book Review Platform</h3>
-                    <p class="project-subtitle">Full-Stack MERN · React 18 + Express + MongoDB</p>
-                    <p class="project-date"><i class="fas fa-calendar-alt"></i> 2025</p>
-                    <ul class="project-bullets">
-                        <li>Built a full-stack book review SaaS with <strong>JWT auth</strong>, book CRUD, star ratings
-                            (1–5), search &amp; filter, and pagination (10/page).</li>
-                        <li>Hardened API with <strong>10+ security enhancements</strong>: Helmet.js headers, rate
-                            limiting (100 req/15 min general, 5 req/15 min auth), bcrypt hashing.</li>
-                        <li>Implemented <strong>express-validator</strong> with client + server-side validation, CORS
-                            protection, and error boundaries across the React 18 frontend.</li>
-                        <li>Deployed frontend on <strong>Vercel</strong>, backend on Render; MongoDB Atlas with indexes
-                            for fast query performance.</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span class="tag tag-green">React 18</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Helmet.js</span>
-                        <span class="tag">JWT</span>
-                        <span class="tag">bcrypt</span>
-                        <span class="tag">Mongoose 8</span>
-                    </div>
-                    <div class="project-badge live"><span class="live-dot"></span>Live</div>
-                </div>
-
 
             </div>
+        </div>
     </section>
 
     <!-- ───── ACHIEVEMENTS ───── -->
@@ -415,7 +426,8 @@
                     <div class="ach-icon-wrap cf"><img src="cf.png" alt="Codeforces" class="ach-platform-logo" /></div>
                     <div class="ach-body">
                         <h3 class="ach-title">Codeforces Specialist</h3>
-                        <p class="ach-desc">Rating <strong>1494</strong> · Specialist rank on Codeforces</p>
+                        <p class="ach-desc">Rating <strong>1494</strong> · Consistently solved Div. 2 C/D
+                            level problems</p>
                         <a href="https://codeforces.com/profile/anubhavverma233" target="_blank" rel="noopener"
                             class="ach-link">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -425,7 +437,8 @@
                     <div class="ach-icon-wrap cc"><img src="cc.png" alt="CodeChef" class="ach-platform-logo" /></div>
                     <div class="ach-body">
                         <h3 class="ach-title">CodeChef 3★</h3>
-                        <p class="ach-desc">Rating <strong>1775</strong> · Three star rated competitive programmer</p>
+                        <p class="ach-desc">Rating <strong>1775</strong> · Three star rated competitive
+                            programmer</p>
                         <a href="https://www.codechef.com/users/anubhavverma23" target="_blank" rel="noopener"
                             class="ach-link">View Profile <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -449,23 +462,28 @@
                         <h3>Languages</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">C++</span>
                         <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TypeScript</span>
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
                         <span class="skill-tag">SQL</span>
                     </div>
                 </div>
                 <div class="skill-group glass-card reveal">
                     <div class="skill-group-header">
-                        <i class="fas fa-desktop skill-group-icon"></i>
-                        <h3>Frontend</h3>
+                        <i class="fas fa-microphone skill-group-icon"></i>
+                        <h3>Voice AI & LLM</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">ElevenLabs</span>
+                        <span class="skill-tag">Groq API</span>
+                        <span class="skill-tag">Gemini API</span>
+                        <span class="skill-tag">RAG Pipelines</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">SSE Streaming</span>
+                        <span class="skill-tag">Prompt Engineering</span>
                     </div>
                 </div>
                 <div class="skill-group glass-card reveal">
@@ -477,41 +495,44 @@
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Express.js</span>
                         <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">NestJS</span>
                         <span class="skill-tag">REST APIs</span>
                         <span class="skill-tag">WebSockets</span>
+                        <span class="skill-tag">Real-time Systems</span>
                         <span class="skill-tag">JWT</span>
                         <span class="skill-tag">OAuth</span>
                     </div>
                 </div>
                 <div class="skill-group glass-card reveal">
                     <div class="skill-group-header">
+                        <i class="fas fa-desktop skill-group-icon"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">AudioWorklet</span>
+                        <span class="skill-tag">shadcn/ui</span>
+                    </div>
+                </div>
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-header">
                         <i class="fas fa-database skill-group-icon"></i>
-                        <h3>Databases</h3>
+                        <h3>Databases & Caching</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">PostgreSQL</span>
                         <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
                         <span class="skill-tag">Supabase</span>
                         <span class="skill-tag">Firebase</span>
                     </div>
                 </div>
                 <div class="skill-group glass-card reveal">
                     <div class="skill-group-header">
-                        <i class="fas fa-brain skill-group-icon"></i>
-                        <h3>AI / ML</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">LangChain</span>
-                        <span class="skill-tag">Gemini API</span>
-                        <span class="skill-tag">RAG</span>
-                        <span class="skill-tag">FAISS</span>
-                        <span class="skill-tag">Embeddings</span>
-                    </div>
-                </div>
-                <div class="skill-group glass-card reveal">
-                    <div class="skill-group-header">
                         <i class="fas fa-tools skill-group-icon"></i>
-                        <h3>DevOps &amp; Tools</h3>
+                        <h3>DevOps & Tools</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Docker</span>
@@ -528,12 +549,13 @@
                         <h3>Core CS</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Data Structures &amp; Algorithms</span>
+                        <span class="skill-tag">Data Structures & Algorithms</span>
+                        <span class="skill-tag">System Design</span>
                         <span class="skill-tag">Operating Systems</span>
                         <span class="skill-tag">DBMS</span>
                         <span class="skill-tag">Computer Networks</span>
                         <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">Client–Server Architecture</span>
+                        <span class="skill-tag">Distributed Systems</span>
                     </div>
                 </div>
             </div>
@@ -588,7 +610,7 @@
             <div class="section-header reveal">
                 <span class="section-tag">Contact</span>
                 <h2 class="section-title">Let's Connect</h2>
-                <p class="contact-sub reveal">I'm actively looking for SDE internship opportunities at top product
+                <p class="contact-sub reveal">I'm actively seeking SDE internship opportunities at product and AI
                     companies. If you'd like to talk, my inbox is always open.</p>
             </div>
             <div class="contact-grid reveal">
@@ -625,7 +647,7 @@
     <!-- ───── FOOTER ───── -->
     <footer class="footer">
         <div class="footer-inner">
-            <p class="footer-copy">Designed &amp; Built by <strong>Anubhav Verma</strong> · 2025</p>
+            <p class="footer-copy">Designed &amp; Built by <strong>Anubhav Verma</strong> · 2026</p>
             <div class="footer-social">
                 <a href="https://github.com/artorias-66" target="_blank" rel="noopener" aria-label="GitHub"><i
                         class="fab fa-github"></i></a>

@@ -28,7 +28,7 @@
       this.maxAlpha = Math.random() * 0.55 + 0.1;
       this.life = 0;
       this.maxLife = Math.random() * 300 + 200;
-      this.color = Math.random() > 0.5 ? '#4f8ef7' : '#00d4ff';
+      this.color = Math.random() > 0.5 ? '#9d4edd' : '#f472b6';
     }
     update() {
       this.life++;
@@ -71,7 +71,7 @@
         if (dist < MAX_DIST) {
           ctx.save();
           ctx.globalAlpha = (1 - dist / MAX_DIST) * 0.08;
-          ctx.strokeStyle = '#4f8ef7';
+          ctx.strokeStyle = '#9d4edd';
           ctx.lineWidth = 0.6;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
@@ -106,11 +106,11 @@
   const el = document.getElementById('typed-text');
   if (!el) return;
   const phrases = [
-    'Full-Stack Engineer',
-    'DevOps Enthusiast',
+    'Voice AI Engineer',
+    'Full-Stack Developer',
     'LeetCode Knight 🏅',
-    'Open Source Builder',
     'Backend Architect',
+    'Real-Time Systems Builder',
   ];
   let phraseIdx = 0;
   let charIdx = 0;
@@ -145,9 +145,8 @@
   if (!els.length) return;
 
   const obs = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // stagger children in the same parent
         const siblings = [...entry.target.parentElement.querySelectorAll('.reveal:not(.visible)')];
         const delay = siblings.indexOf(entry.target) * 80;
         setTimeout(() => entry.target.classList.add('visible'), delay);
@@ -174,7 +173,6 @@
     function step(now) {
       const elapsed = now - start;
       const progress = Math.min(elapsed / duration, 1);
-      // ease out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
       el.textContent = Math.round(eased * target).toLocaleString() + suffix;
       if (progress < 1) requestAnimationFrame(step);
@@ -202,11 +200,9 @@
   const sections = document.querySelectorAll('section[id]');
 
   function onScroll() {
-    // shrink
     if (window.scrollY > 40) navbar.classList.add('scrolled');
     else navbar.classList.remove('scrolled');
 
-    // active link
     let current = '';
     sections.forEach(sec => {
       const top = sec.offsetTop - 100;
@@ -234,7 +230,6 @@
     btn.setAttribute('aria-expanded', String(open));
   });
 
-  // close on link click
   menu.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
       menu.classList.remove('open');
@@ -243,7 +238,6 @@
     });
   });
 
-  // close on outside click
   document.addEventListener('click', (e) => {
     if (!btn.contains(e.target) && !menu.contains(e.target)) {
       menu.classList.remove('open');
@@ -261,7 +255,7 @@
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top)  / rect.height - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
       card.style.transform = `translateY(-6px) rotateX(${-y * 5}deg) rotateY(${x * 5}deg)`;
     });
     card.addEventListener('mouseleave', () => {

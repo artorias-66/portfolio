@@ -3,26 +3,26 @@
    ============================================================ */
 :root {
   /* Colors */
-  --bg-primary: #070b14;
-  --bg-secondary: #0d1223;
-  --bg-alt: #0a0f1c;
+  --bg-primary: #0a0514;
+  --bg-secondary: #110924;
+  --bg-alt: #0c061c;
   --glass-bg: rgba(255, 255, 255, 0.04);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-hover: rgba(255, 255, 255, 0.07);
 
-  --accent-1: #4f8ef7;
-  /* electric blue */
-  --accent-2: #00d4ff;
-  /* cyan */
-  --accent-3: #7c3aed;
-  /* purple */
+  --accent-1: #9d4edd;
+  /* vibrant purple */
+  --accent-2: #f472b6;
+  /* neon pinkish violet */
+  --accent-3: #c084fc;
+  /* light purple */
   --gold: #f59e0b;
   --green: #10b981;
   --red-soft: #ef4444;
 
   --text-primary: #f0f4ff;
-  --text-secondary: #8a9bc1;
-  --text-muted: #4a5578;
+  --text-secondary: #a78bfa;
+  --text-muted: #6b5a8e;
 
   /* Typography */
   --font-head: 'Space Grotesk', sans-serif;
@@ -40,7 +40,7 @@
 
   /* Shadows */
   --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 40px rgba(79, 142, 247, 0.15);
+  --shadow-glow: 0 0 40px rgba(157, 78, 221, 0.15);
 }
 
 /* ============================================================
