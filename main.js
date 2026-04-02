@@ -106,11 +106,11 @@
   const el = document.getElementById('typed-text');
   if (!el) return;
   const phrases = [
-    'Voice AI Engineer',
-    'Full-Stack Developer',
+    'Backend Engineer',
+    'System Design Enthusiast',
     'LeetCode Knight 🏅',
-    'Backend Architect',
-    'Real-Time Systems Builder',
+    'Distributed Systems Builder',
+    'Full-Stack Developer',
   ];
   let phraseIdx = 0;
   let charIdx = 0;
