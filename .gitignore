@@ -1,0 +1,7 @@
+# Resume — keep local only, never push
+resume.tex
+resume.pdf
+*.aux
+*.log
+*.out
+*.synctex.gz
