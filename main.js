@@ -28,7 +28,7 @@
       this.maxAlpha = Math.random() * 0.55 + 0.1;
       this.life = 0;
       this.maxLife = Math.random() * 300 + 200;
-      this.color = Math.random() > 0.5 ? '#9d4edd' : '#f472b6';
+      this.color = Math.random() > 0.5 ? '#00f3ff' : '#00dce6';
     }
     update() {
       this.life++;
@@ -71,7 +71,7 @@
         if (dist < MAX_DIST) {
           ctx.save();
           ctx.globalAlpha = (1 - dist / MAX_DIST) * 0.08;
-          ctx.strokeStyle = '#9d4edd';
+          ctx.strokeStyle = '#00f3ff';
           ctx.lineWidth = 0.6;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
