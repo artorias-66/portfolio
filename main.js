@@ -106,11 +106,11 @@
   const el = document.getElementById('typed-text');
   if (!el) return;
   const phrases = [
-    'Backend Engineer',
-    'System Design Enthusiast',
-    'LeetCode Knight 🏅',
-    'Distributed Systems Builder',
-    'Full-Stack Developer',
+    'SDE Intern @ Anakin',
+    'Backend & Distributed Systems Engineer',
+    'Reverse Engineering APIs & Systems',
+    'LeetCode Knight — Rating 2007',
+    'Competitive Programmer · 2000+ Problems',
   ];
   let phraseIdx = 0;
   let charIdx = 0;
